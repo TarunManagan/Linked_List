@@ -45,8 +45,3 @@ int main(){
 1->2->3->NULL
 */
 
-/*OUTPUT
-3->NULL
-2->3->NULL
-1->2->3->NULL
-*/

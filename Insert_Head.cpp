@@ -1,5 +1,7 @@
 #include<iostream>
 using namespace std;
+
+// Create a node
 class Node{
     public:
     int val;
@@ -10,6 +12,8 @@ class Node{
         next = NULL;
     }
 };
+
+// Inserting new elements at the beginning
 void insertAtHead(Node* &head, int val){
     Node* new_node = new Node(val);
     new_node -> next=head;
@@ -33,8 +37,13 @@ int main(){
     insertAtHead(head,1);
     display(head);
     return 0;
-
 }
+
+/*OUTPUT
+3->NULL
+2->3->NULL
+1->2->3->NULL
+*/
 
 /*OUTPUT
 3->NULL
